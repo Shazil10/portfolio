@@ -62,7 +62,7 @@ const Footer = () => (
     </StyledSocialLinks>
 
     <StyledCredit tabIndex="-1">
-      <p>Designed by Brittany Chiang | Modified by Sameer Zahid</p>
+      <p>Designed by Brittany Chiang | Modified by Shazil Farukh</p>
     </StyledCredit>
   </StyledFooter>
 );

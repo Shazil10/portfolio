@@ -2,9 +2,9 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Sameer Zahid',
+    title: 'Shazil Farukh',
     description:
-      'Sameer Zahid is a Forward Deployed Engineer at Lindy AI who builds AI systems that advance ethical human-AI collaboration, freeing humanity from work.',
+      'Shazil Farukh is a Forward Deployed Engineer at Lindy AI who builds AI systems that advance ethical human-AI collaboration, freeing humanity from work.',
     siteUrl: 'https://sameerzahid.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@sameerzahidddd',
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Sameer Zahid',
-        short_name: 'Sameer Zahid',
+        name: 'Shazil Farukh',
+        short_name: 'Shazil Farukh',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
