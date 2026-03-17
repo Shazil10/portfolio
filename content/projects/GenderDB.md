@@ -1,13 +1,15 @@
 ---
-date: '2021-11-12'
-title: 'An attempt at Mitigating Gender Double-Bind'
-github: ''
-external: '/Genderdb.pdf'
+date: '2025-10-30'
+title: 'Bayesian Linear Regression for Taipei Housing Prices'
+github: 'https://github.com/Shazil10/CS146-Linear-Regression-Assignment'
+external: '/cs146-linear-regression.pdf'
 tech:
-  - Workshop Design & Facilitation
-  - Bias Mitigation Strategy Development
+  - Bayesian Linear Regression
+  - Model Comparison
+  - Cross-Validation
+  - Housing Price Modeling
 company: 'Minerva University'
 showInProjects: true
 ---
 
-Conducted research on Gender Double-Bind and designed a workshop to educate participants on gender bias and its impact in the workplace. Developed interactive activities to foster empathy, promote understanding of gender disparities, and create actionable plans to mitigate gender-based biases in professional settings.
+A Bayesian linear regression study of 414 housing transactions in New Taipei City's Sindian District, comparing multiple models of how MRT distance, building age, and local amenities affect unit prices. Uses cross-validation to evaluate competing specifications (simple vs flexible distance effects and neighborhood terms) and quantifies uncertainty in effect sizes for real-estate decision making.
