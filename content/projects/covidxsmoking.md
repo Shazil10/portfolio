@@ -1,15 +1,17 @@
 ---
-date: '2023-01-29'
-title: 'Smoking x COVID-19: A Research Proposal'
-github: 'https://sameerzahiddd.medium.com/covid-19-x-smoking-a-research-design-732248fd7c6c'
-external: '\Covidxsmoking.pdf'
+date: '2025-04-12'
+title: 'Berlin Traffic Congestion Modeling & Visualization'
+github: 'https://github.com/Shazil10/Berlin-Traffic-Congestion-Simulation'
+external: '/berlin-traffic-congestion-simulation.pdf'
 tech:
-  - Research Design
-  - Retrospective Cohort Study
-  - Qualitative categorization
-  - Confounding Variable Analysis
+  - Python
+  - OSMnx
+  - NetworkX
+  - Simulation
+  - Data Visualization
+  - Congestion Modeling
 company: 'Minerva University'
 showInProjects: true
 ---
 
-A retrospective cohort observational study design to explore the correlation between smoking habits and the severity of COVID-19 symptoms.
+An applied traffic simulation on the Berlin road network using OSMnx and NetworkX shortest-path routing with edge travel-time weights. Compares threshold-based “jam” rules with gradual and density-based congestion slowdowns, and builds enhanced visualizations (hotspots, flow arrows, legends, and animation) to diagnose network bottlenecks over time.
