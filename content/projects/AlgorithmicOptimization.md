@@ -1,14 +1,16 @@
 ---
-date: '2021-01-01'
-title: 'Algorithmic Optimization'
-github: 'https://github.com/Sameerzahiddd/Covid-19-Vaccine-Distribution-Disease-Spread'
-external: '/algorithmicoptimization.pdf'
+date: '2025-01-28'
+title: 'Airport Security Queue Simulation'
+github: 'https://github.com/Shazil10/Airport-Security-Queues'
+external: '/airport-security-queues.pdf'
 tech:
   - Python
-  - Numpy
+  - NumPy
+  - Pandas
   - Matplotlib
+  - Discrete-Event Simulation
 company: 'Minerva University'
 showInProjects: true
 ---
 
-A demostration of algorithmic optimization and numerical simulation through two focused applications: optimizing routes for efficient vaccine distribution and modeling the spread of infectious diseases using the SIR model.
+A discrete-event simulation of an airport security checkpoint operating over 24 hours, where travelers arrive via a Poisson process and route to the shortest queue. Models a senior officer bottleneck (3% of travelers requiring additional screening) and validates empirical queue lengths against M/G/1 theory using the Pollaczek–Khinchine formula.
