@@ -1,15 +1,16 @@
 ---
-date: '2022-01-29'
-title: 'A Regression-Based Prediction Model'
-github: ''
-external: 'https://sameerzahiddd.medium.com/a-regression-based-prediction-model-196e5096d77c'
+date: '2025-02-27'
+title: 'Bacteria Growth and Diffusion Simulation'
+github: 'https://github.com/Shazil10/Bacteria-Growth-Model'
+external: '/bacteria-growth-model.pdf'
 tech:
-  - Linear Regression
-  - Correlation Coefficient
-  - Predictive Analytics
-  - Confidence Intervals
+  - Python
+  - NumPy
+  - Matplotlib
+  - Grid Simulation
+  - Diffusion Models
 company: 'Minerva University'
 showInProjects: true
 ---
 
-Evaluating the Linear Relationship Between Weight and Height: A Correlation and Regression Analysis of Youth Data
+An implementation and analysis of a 2D grid-based bacteria growth model coupled with a renewable food resource. The system applies logistic food regrowth with diffusion, bacteria consumption with starvation dynamics, reproduction, and bacteria diffusion, producing emergent spatial patterns and validated via targeted test cases.
