@@ -1,15 +1,17 @@
 ---
-date: '2024-04-20'
-title: 'Text Generator v3'
-github: ''
-external: '/textgen3.pdf'
+date: '2025-03-23'
+title: 'Bunge Global SA: Capital Budgeting & FX Risk Strategy'
+github: 'https://github.com/Shazil10/Bunge-Global-Financial-Strategy'
+external: '/bunge-global-financial-strategy.pdf'
 tech:
-  - Transformer Models
-  - Byte-Pair Encoding Tokenization
-  - XGBoost
-  - Random Forest Models
+  - Capital Budgeting (NPV/IRR)
+  - FCFF vs FCFE
+  - WACC / Cost of Capital
+  - FX Scenario Analysis
+  - Hedging Strategy Design
+  - Sensitivity Analysis
 company: 'Minerva University'
 showInProjects: true
 ---
 
-The final iteration implements a generative pre-trained transformer model with a focus on emulating my personal writing style. Enhanced the preprocessing pipeline through tokenization and text augmentation. Conducted model evaluation and provided insights.
+A global financial strategy case study on Bunge Global SA (BG) proposing and valuing two investments: a 20,000-ton pea protein facility and a digital agribusiness platform. Builds FCFF/FCFE models to evaluate NPV/IRR/payback, stress-tests outcomes across operational and financing assumptions, and models multi-currency revenue exposure with FX scenarios and hedging strategies to preserve risk-adjusted returns.
