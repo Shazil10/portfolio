@@ -1,14 +1,17 @@
 ---
-date: '2022-12-16'
-title: 'Student Debt, a disastrous convenience?'
-github: ''
-external: 'https://medium.com/@sameerzahiddd/student-debt-a-disastrous-convenience-1595ebab2e76'
+date: '2025-04-22'
+title: 'CoreWeave Equity Valuation (DCF, Comps & Precedents)'
+github: 'https://github.com/Shazil10/CoreWeave-Growth-Valuation'
+external: '/coreweave-growth-valuation.pdf'
 tech:
-  - Economic Analysis/Research
-  - Data Visualization
-  - Policy Evaluation & Recommendations
+  - DCF Valuation
+  - WACC & Terminal Value
+  - EV/Revenue Multiples
+  - Precedent Transactions
+  - Sensitivity Analysis
+  - Excel Modeling
 company: 'Minerva University'
 showInProjects: true
 ---
 
-An in-depth analysis of the growing U.S. student debt crisis, its impact on the economy, and potential policy solutions to mitigate its long-term risks.
+An equity valuation of CoreWeave (CRWV) following its March 2025 IPO, triangulating intrinsic value using a DCF (with WACC/terminal growth sensitivities), public comparables (EV/Revenue), and precedent transactions. Highlights concentration and leverage risks and synthesizes results into a football-field range and investor recommendation.
