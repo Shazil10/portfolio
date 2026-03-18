@@ -1,6 +1,6 @@
 ---
 date: '2026-02-17'
-title: 'Voice-Based Code-Switching Detection with MFCCs'
+title: 'Detecting Speech Style Shifts with ML'
 github: 'https://github.com/Shazil10/Voice-Codeswitching-ML-Pipeline'
 external: '/voice-codeswitching-ml-pipeline.pdf'
 tech:
