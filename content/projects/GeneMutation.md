@@ -1,13 +1,16 @@
 ---
-date: '2022-12-01'
-title: 'Genealogy Tree Finder using DP and Levenshtein distance'
-github: 'https://github.com/Sameerzahiddd/Genealogical-Mutation'
-external: '/Genetic_Mutation.pdf'
+date: '2025-11-18'
+title: 'Hierarchical Negative Binomial Modeling for Sports Attendance'
+github: 'https://github.com/Shazil10/Discrete-and-Multilevel-Models'
+external: '/cs146-discrete-multilevel-models.pdf'
 tech:
   - Python
   - Jupyter Notebook
+  - Bayesian Hierarchical Modeling
+  - Negative Binomial Regression
+  - WAIC / LOO Cross-Validation
 company: 'Minerva University'
 showInProjects: true
 ---
 
-This project is a demonstration of finding the Genealogy tree from a set of gene sequences that have a small probability of insertion, deletion and mutation using both a local and global algorithmic approaches that use Dynamic Programming and Levenshtein distance.
+A Bayesian count-modeling project that analyzes attendance for 12 professional sports teams (218 observed games) and predicts 22 missing attendance values from ticket-scanner failures. Compares a complete-pooling baseline against a hierarchical model with team and day-of-week effects using a Negative Binomial likelihood for overdispersion, and selects the better specification via WAIC and LOO cross-validation before generating posterior predictive estimates for the missing games.
