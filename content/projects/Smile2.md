@@ -1,15 +1,16 @@
 ---
-date: '2024-12-21'
-title: 'Smile Detection v2'
-github: 'https://github.com/Sameerzahiddd/Smile-Detection-2'
-external: '\smile_generator.pdf'
+date: '2026-02-17'
+title: 'Voice-Based Code-Switching Detection with MFCCs'
+github: 'https://github.com/Shazil10/Voice-Codeswitching-ML-Pipeline'
+external: '/voice-codeswitching-ml-pipeline.pdf'
 tech:
-  - CycleGAN
-  - Data Augmentation
-  - Deep Learning
-  - FID
+  - MFCC Feature Extraction
+  - 1D Convolutional Neural Network
+  - Softmax Regression
+  - librosa
+  - TensorFlow / Keras
 company: 'Minerva University'
 showInProjects: true
 ---
 
-This second iteration moves on from classification to attempting to transform non-smiling faces into smiling ones. It uses a much larger dataset (nearly 14,000 images) and integrates generative modeling (CycleGAN) to transform non-smiling faces into smiling ones. The model is then evaluated using the Frechet Inception Distance (FID).
+An end-to-end audio ML pipeline testing whether a classifier trained only on Mel-Frequency Cepstral Coefficients (MFCCs) can detect code-switching across three social contexts (family, close friend, professional) from personal WhatsApp voice notes. Compares a from-scratch Multinomial Softmax Regression model against a 1D CNN (Keras) and evaluates with confusion matrices, ROC curves, and per-class F1 scores.
