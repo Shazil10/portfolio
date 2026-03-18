@@ -1,6 +1,6 @@
 ---
 date: '2025-11-18'
-title: 'Bayesian Sports Attendance Prediction'
+title: 'Hierarchical Modeling for Sports Attendance'
 github: 'https://github.com/Shazil10/Discrete-and-Multilevel-Models'
 external: '/cs146-discrete-multilevel-models.pdf'
 tech:

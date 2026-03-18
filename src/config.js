@@ -1,14 +1,14 @@
 module.exports = {
-  email: 'sameerzahid@uni.minerva.edu',
+  email: 'm.farukh@uni.minerva.edu',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/sameerzahiddd',
+      url: 'https://github.com/Shazil10',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/mian-sameer-zahid/',
+      url: 'https://www.linkedin.com/in/muhammad-shazil-farukh/',
     },
   ],
 
