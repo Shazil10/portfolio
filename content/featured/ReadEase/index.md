@@ -1,16 +1,21 @@
 ---
 date: '1'
-title: 'ReadEase'
-cover: './Readease.jpeg'
-github: 'https://github.com/Sameerzahiddd/ReadEase'
-external: 'https://main.domwg75nq6jft.amplifyapp.com/'
+title: 'Scout (ApartmentAgent)'
+cover: './demo.png'
+github: 'https://github.com/Shazil10/Scout'
+external: ''
 tech:
-  - React.js
-  - Firebase
-  - Flask / Python
-  - GPT API
-  - Docker
-  - Manifest V3 API
+  - Next.js
+  - TypeScript
+  - LangGraph
+  - Bland AI
+  - Auth0
+  - Airbyte
+  - PostgreSQL
+  - FastAPI
+  - Tailwind CSS
 ---
 
-A versatile tool designed to enhance reading comprehension by providing advanced text highlighting features on two platforms: a browser extension and a web application.
+AI agent that calls apartment listings on your behalf, asks your specific questions, and only schedules viewings worth your time. Built at Deep Agents Hackathon (RSAC 2026) - Winner: Best Use of Kiro (1st Place).
+
+The agent autonomously monitors new listings, calls property managers with pre-screen and deep-screen calls, scores apartments based on your priorities, and auto-books viewings to your Google Calendar for top matches. Features real-time transcript streaming, Fair Housing Act compliance enforcement, and multi-tenant architecture with state persistence.
