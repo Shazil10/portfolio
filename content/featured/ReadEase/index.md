@@ -1,7 +1,7 @@
 ---
 date: '1'
 title: 'Scout (ApartmentAgent)'
-cover: './demo.png'
+cover: './Scout_image.jpg'
 github: 'https://github.com/Shazil10/Scout'
 external: ''
 tech:
