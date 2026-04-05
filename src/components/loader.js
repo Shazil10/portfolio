@@ -31,9 +31,6 @@ const StyledLoader = styled.div`
       margin: 0 auto;
       fill: none;
       user-select: none;
-      #B {
-        opacity: 0;
-      }
     }
   }
 `;
@@ -48,21 +45,15 @@ const Loader = ({ finishLoading }) => {
 
     loader
       .add({
-        targets: '#logo path',
-        delay: 300,
-        duration: 1500,
-        easing: 'easeInOutQuart',
-        strokeDashoffset: [anime.setDashoffset, 0],
-      })
-      .add({
-        targets: '#logo #B',
+        targets: '#logo',
         duration: 700,
-        easing: 'easeInOutQuart',
-        opacity: 1,
+        easing: 'easeOutQuart',
+        opacity: [0, 1],
+        scale: [0.86, 1],
       })
       .add({
         targets: '#logo',
-        delay: 500,
+        delay: 350,
         duration: 300,
         easing: 'easeInOutQuart',
         opacity: 0,

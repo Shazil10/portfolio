@@ -127,13 +127,13 @@ const About = () => {
 
   const skills = [
     'Python',
-    'PyTorch',
-    'React',
-    'TensorFlow',
-    'Node.js',
-    'GraphQL',
+    'scikit-learn',
+    'TensorFlow / PyTorch',
     'SQL',
-    'Docker',
+    'Bloomberg Terminal',
+    'Power BI',
+    'Alpaca',
+    'QuantLib',
   ];
 
   return (
@@ -144,23 +144,24 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Sameer, a Forward Deployed Engineer at{' '}
-              <a href="https://www.lindy.ai/">Lindy AI</a> where I architect and deploy AI
-              automation systems for enterprise clients. I've built 75+ AI agents across 28+
-              companies representing $1.5M+ in ARR, engineering 100+ API integrations and delivering
-              conversational AI solutions that free people from repetitive work.
+              Hello! I'm Shazil, an analyst in the Financial Technology team at{' '}
+              <a href="https://treasury.worldbank.org/en/about/unit/treasury">
+                World Bank Treasury
+              </a>
+              , where I work across quantitative fixed-income, capital markets, and asset management
+              projects.
             </p>
 
             <p>
-              Previously, I researched AI bias at <a href="\ScaleAI.pdf">Scale AI</a>, taught ML at{' '}
-              <a href="https://www.terraeducation.com/">Terra Education</a>, and worked on AI-driven
-              product formulation at <a href="https://notco.com/">NotCo</a>. I also built{' '}
-              <a href="https://www.sportspot.online/">SportSpot</a> and{' '}
-              <a href="https://main.domwg75nq6jft.amplifyapp.com/">ReadEase</a> to solve problems I
-              saw around me.
+              I study Computational Science and Business at{' '}
+              <a href="https://www.minerva.edu/">Minerva University</a> and am passionate about
+              quantitative finance, building systematic, algorithmic approaches to markets, pricing
+              models, and data-driven investment strategies. Previously, I’ve worked in investment
+              banking at Vermilion Rock Advisors, venture investing at Red Cell Partners, and
+              corporate finance at Siemens.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few tools I’ve been working with recently:</p>
           </div>
 
           <ul className="skills-list">
@@ -172,7 +173,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpeg"
+              src="../../images/shazil-portrait.png"
               width={400}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
