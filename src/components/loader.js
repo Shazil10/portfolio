@@ -35,33 +35,44 @@ const StyledLoader = styled.div`
   }
 `;
 
+/** Splash visible long enough to read; friend’s template felt ~1.5s+. */
+const LOADER_MIN_VISIBLE_MS = 1600;
+
 const Loader = ({ finishLoading }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   const animate = () => {
+    const startedAt = Date.now();
+
+    const endLoader = () => {
+      const elapsed = Date.now() - startedAt;
+      const rest = Math.max(0, LOADER_MIN_VISIBLE_MS - elapsed);
+      window.setTimeout(() => finishLoading(), rest);
+    };
+
     const loader = anime.timeline({
-      complete: () => finishLoading(),
+      complete: endLoader,
     });
 
     loader
       .add({
         targets: '#logo',
-        duration: 700,
+        duration: 850,
         easing: 'easeOutQuart',
         opacity: [0, 1],
         scale: [0.86, 1],
       })
       .add({
         targets: '#logo',
-        delay: 350,
-        duration: 300,
+        delay: 400,
+        duration: 380,
         easing: 'easeInOutQuart',
         opacity: 0,
-        scale: 0.1,
+        scale: 0.92,
       })
       .add({
         targets: '.loader',
-        duration: 200,
+        duration: 280,
         easing: 'easeInOutQuart',
         opacity: 0,
         zIndex: -1,

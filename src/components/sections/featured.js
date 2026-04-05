@@ -175,9 +175,15 @@ const StyledProject = styled.li`
       ${({ theme }) => theme.mixins.inlineLink};
     }
 
-    strong {
+    /* Use class "featured-lede-name" in markdown for the single bright name; **bold** stays subtle. */
+    .featured-lede-name {
       color: var(--white);
-      font-weight: normal;
+      font-weight: 600;
+    }
+
+    strong {
+      color: var(--light-slate);
+      font-weight: 600;
     }
   }
 
