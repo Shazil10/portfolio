@@ -6,8 +6,8 @@ module.exports = {
     description:
       'Shazil Farukh works on quantitative finance, statistical arbitrage, and fixed-income analytics at World Bank Treasury. B.S. Computational Science and Business at Minerva University.',
     siteUrl: 'https://shazilfarukh.com', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@sameerzahidddd',
+    image: '/og-card.png', // Social preview (1200×630); regenerate via scripts/generate-og-image.js
+    twitterUsername: '',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
