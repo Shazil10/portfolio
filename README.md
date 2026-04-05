@@ -5,7 +5,7 @@
   Personal Portfolio - Shazil Farukh
 </h1>
 <p align="center">
-  The personal portfolio of <a href="https://sameerzahid.com" target="_blank">Shazil Farukh</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>.
+  The personal portfolio of <a href="https://shazilfarukh.com" target="_blank">Shazil Farukh</a>, built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>.
 </p>
 
 ## 🛠 Installation & Set Up

@@ -5,7 +5,7 @@ module.exports = {
     title: 'Shazil Farukh',
     description:
       'Shazil Farukh works on quantitative finance, statistical arbitrage, and fixed-income analytics at World Bank Treasury. B.S. Computational Science and Business at Minerva University.',
-    siteUrl: 'https://sameerzahid.com', // No trailing slash allowed!
+    siteUrl: 'https://shazilfarukh.com', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@sameerzahidddd',
   },
