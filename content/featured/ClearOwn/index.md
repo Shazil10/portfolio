@@ -13,6 +13,4 @@ tech:
   - Agentic KYB
 ---
 
-**ClearOwn** is an agentic Know Your Business (KYB) workflow that **recursively traces Ultimate Beneficial Owners (UBOs)** through layered shell structures, **maps jurisdiction risk**, and mints **portable compliance credentials**—for teams that cannot afford gaps in verification.
-
-Demo flow runs end-to-end from the live product UI through orchestration, extraction, and on-chain credential issuance; see the repo for architecture diagrams and integration contracts.
+**ClearOwn** is a Know Your Business (KYB) workflow that helps you **find who ultimately owns a company**, even when ownership is buried in nested shell entities. It **surfaces jurisdiction risk** and **issues portable credentials** so teams can show verification was done and avoid gaps in compliance.
