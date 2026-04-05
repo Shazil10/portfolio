@@ -47,7 +47,7 @@ const Head = ({ title, description, image }) => {
       <meta property="og:image" content={seo.image} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content="Shazil Farukh — portfolio" />
+      <meta property="og:image:alt" content="Shazil Farukh — portfolio hero" />
       <meta property="og:site_name" content={defaultTitle} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:type" content="website" />

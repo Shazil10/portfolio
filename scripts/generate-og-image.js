@@ -1,9 +1,9 @@
 /* eslint-disable no-console */
-/* Regenerates static/og-card.png for Open Graph / Telegram previews (1200×630). */
+/* Optional text fallback card. Production social image: static/og-hero.png (site screenshot). */
 const path = require('path');
 const sharp = require('sharp');
 
-const OUT = path.join(__dirname, '..', 'static', 'og-card.png');
+const OUT = path.join(__dirname, '..', 'static', 'og-fallback.png');
 
 const svg = `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
