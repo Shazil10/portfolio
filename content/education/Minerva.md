@@ -1,14 +1,14 @@
 ---
 date: '2'
-degree: 'B.Sc. Computational Science and Business'
+degree: 'B.Sc. Computational Science & Business'
 institution: 'Minerva University'
 range: 'August 2022 - May 2026'
 url: 'https://www.minerva.edu/'
 ---
 
 - GPA: 3.90
-- Pursuing a Double Major Bachelor of Science in Computer Science and Business, with concentrations in Data Science & Statistics, and Strategic Finance, respectively.
-- Minerva immerses students in hands-on, location-based assignments and industry placements across USA, South Korea, Taiwan, Argentina, India, The UK, and Germany, over four years, every semester being in a new country.
+- Pursuing a double-major curriculum spanning computer science, business, data science & statistics, and strategic finance.
+- Minerva combines hands-on, location-based assignments with industry placements across the USA, South Korea, Taiwan, Argentina, India, the UK, and Germany.
 - [World's #1 most innovative university (WURI, 2021-24)](https://www.wuri.world/2023-global-top-100) with a ~1% acceptance rate.
 - Awarded a highly competitive full-ride scholarship.
-- Courses: Data Structures & Algorithms, Machine Learning, Quantitative Finance, Financial Modelling, Probability and Statistics, Market Dynamics and Product Analysis, Venture Initiation & Valuation, Global Financial Strategy, Modeling and Analysis of Complex Systems, Bayesian Statistics, Core Maths (Calculus, Linear Algebra)
+- Courses: Data Structures & Algorithms, Machine Learning, Quantitative Finance, Financial Modeling, Probability & Statistics, Market Dynamics, Venture Valuation, Global Financial Strategy, Complex Systems Modeling, Bayesian Statistics, and Core Math.

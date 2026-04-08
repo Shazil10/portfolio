@@ -9,10 +9,13 @@ import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledEducationSection = styled.section`
-  max-width: 700px;
+  max-width: 980px;
 
   .inner {
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+    column-gap: 48px;
+    align-items: flex-start;
 
     @media (max-width: 600px) {
       display: block;
@@ -20,7 +23,7 @@ const StyledEducationSection = styled.section`
 
     // Prevent container from jumping
     @media (min-width: 700px) {
-      min-height: 340px;
+      min-height: 420px;
     }
   }
 `;
@@ -28,7 +31,8 @@ const StyledEducationSection = styled.section`
 const StyledTabList = styled.div`
   position: relative;
   z-index: 3;
-  width: max-content;
+  width: 100%;
+  max-width: 240px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -72,6 +76,7 @@ const StyledTabButton = styled.button`
   display: flex;
   align-items: center;
   width: 100%;
+  min-width: 100%;
   height: var(--tab-height);
   padding: 0 20px 2px;
   border-left: 2px solid var(--lightest-navy);
@@ -130,27 +135,31 @@ const StyledHighlight = styled.div`
 const StyledTabPanels = styled.div`
   position: relative;
   width: 100%;
-  margin-left: 20px;
+  max-width: 620px;
+  margin-left: 0;
 
   @media (max-width: 600px) {
     margin-left: 0;
+    max-width: 100%;
   }
 `;
 
 const StyledTabPanel = styled.div`
   width: 100%;
   height: auto;
-  padding: 10px 5px;
+  padding: 8px 0;
 
   ul {
     ${({ theme }) => theme.mixins.fancyList};
+    max-width: 620px;
   }
 
   h3 {
-    margin-bottom: 2px;
+    max-width: 560px;
+    margin-bottom: 8px;
     font-size: var(--fz-xxl);
     font-weight: 500;
-    line-height: 1.3;
+    line-height: 1.25;
 
     .institution {
       color: var(--green);
@@ -158,7 +167,7 @@ const StyledTabPanel = styled.div`
   }
 
   .range {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: var(--light-slate);
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
