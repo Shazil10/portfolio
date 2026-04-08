@@ -1,7 +1,7 @@
 ---
 date: '1'
 degree: 'Advanced Levels'
-institution: 'Cambridge Assessment International Education'
+institution: 'Cambridge Education'
 range: 'August 2020 - May 2022'
 url: 'https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/'
 ---
