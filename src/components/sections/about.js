@@ -146,19 +146,17 @@ const About = () => {
             <p>
               Hello! I'm Shazil, an analyst in the Financial Technology team at{' '}
               <a href="https://treasury.worldbank.org/en/about/unit/treasury">
-                World Bank Treasury
+                <strong>World Bank Treasury</strong>
               </a>
-              , where I work across quantitative fixed-income, capital markets, and asset management
-              projects.
+              , building and supporting quantitative workflows for fixed income, capital markets,
+              and asset management ($80B AUM; 70+ central banks).
             </p>
 
             <p>
-              I study Computational Science and Business at{' '}
-              <a href="https://www.minerva.edu/">Minerva University</a> and am passionate about
-              quantitative finance, building systematic, algorithmic approaches to markets, pricing
-              models, and data-driven investment strategies. Previously, I’ve worked in investment
-              banking at Vermilion Rock Advisors, venture investing at Red Cell Partners, and
-              corporate finance at Siemens.
+              Previously, I’ve worked in investment banking at{' '}
+              <strong>Vermilion Rock Advisors</strong>, venture investing at{' '}
+              <strong>Red Cell Partners</strong>, and corporate finance at <strong>Siemens</strong>.
+              Recently, I’ve been most interested in exploring AI for finance.
             </p>
 
             <p>Here are a few tools I’ve been working with recently:</p>
