@@ -126,14 +126,14 @@ const About = () => {
   }, []);
 
   const skills = [
-    'Python (pandas, NumPy, scikit-learn)',
+    'Python',
     'PyTorch & TensorFlow',
-    'LangGraph & agentic workflows',
+    'LangGraph',
     'TypeScript, FastAPI & Next.js',
-    'PostgreSQL & SQL',
+    'SQL',
     'Bloomberg Terminal',
-    'QuantLib & fixed-income modeling',
-    'n8n & event-driven automation',
+    'QuantLib',
+    'n8n',
   ];
 
   return (
