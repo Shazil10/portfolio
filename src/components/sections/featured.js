@@ -328,6 +328,7 @@ const Featured = () => {
               tech
               github
               external
+              folder
               cta
               ctaLabel
               cta2
@@ -364,7 +365,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta, ctaLabel, cta2, cta2Label } =
+            const { external, title, tech, github, cover, folder, cta, ctaLabel, cta2, cta2Label } =
               frontmatter;
             const image = getImage(cover);
 
@@ -410,6 +411,11 @@ const Featured = () => {
                       {external && !cta && (
                         <a href={external} aria-label="External Link" className="external">
                           <Icon name="External" />
+                        </a>
+                      )}
+                      {folder && (
+                        <a href={folder} aria-label="Project Report" className="external">
+                          <Icon name="Folder" />
                         </a>
                       )}
                     </div>
