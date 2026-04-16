@@ -15,4 +15,4 @@ tech:
   - statsmodels
 ---
 
-An equity research report on Fortinet (FTNT) across three lenses: fundamental valuation, stochastic risk simulation, and an ML sentiment signal to guide timing.
+An equity research report on Fortinet (FTNT) across three lenses: fundamental valuation, stochastic risk simulation, and a machine-learning classifier for near-term upside/downside bias.
