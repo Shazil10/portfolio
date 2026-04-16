@@ -15,4 +15,4 @@ tech:
   - statsmodels
 ---
 
-<span class="featured-lede-name">Three-Lens Equity Analysis</span> is an equity research report on Fortinet (FTNT) across three lenses: fundamental DCF valuation, stochastic risk simulation, and an ML sentiment overlay for tactical timing.
+An equity research report on Fortinet (FTNT) across three lenses: fundamental DCF valuation, stochastic risk simulation, and an ML sentiment overlay for tactical timing.
