@@ -6,14 +6,13 @@ github: 'https://github.com/Shazil10/Three-Lens-Equity-Analysis'
 external: ''
 folder: '/three-lens-equity-analysis.pdf'
 tech:
-  - Python
   - yfinance
   - XGBoost
   - hmmlearn
   - arch
+  - QuantLib
+  - Zipline
   - statsmodels
-  - Quantopian
-  - Jupyter
 ---
 
-<span class="featured-lede-name">Three-Lens Equity Analysis</span> is a capstone equity research report on Fortinet (FTNT) combining a DCF/comps valuation, a 20,000-scenario stochastic risk engine (six models, 95% VaR), and an ML sentiment overlay validated across 26 walk-forward windows — converging on a **$84.87 price target** and a HOLD recommendation.
+<span class="featured-lede-name">Three-Lens Equity Analysis</span> is an equity research report on Fortinet (FTNT) across three lenses: fundamental DCF valuation, stochastic risk simulation, and an ML sentiment overlay for tactical timing.
