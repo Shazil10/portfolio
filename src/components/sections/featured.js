@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
@@ -6,6 +6,14 @@ import sr from '@utils/sr';
 import { srConfig } from '@config';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
+
+const StyledFeaturedSection = styled.section`
+  .more-button {
+    ${({ theme }) => theme.mixins.button};
+    margin: 80px auto 0;
+    display: block;
+  }
+`;
 
 const StyledProjectsGrid = styled.ul`
   ${({ theme }) => theme.mixins.resetList};
@@ -342,6 +350,9 @@ const Featured = () => {
   `);
 
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
+  const FEATURED_LIMIT = 3;
+  const [showMore, setShowMore] = useState(false);
+  const projectsToShow = showMore ? featuredProjects : featuredProjects.slice(0, FEATURED_LIMIT);
   const revealTitle = useRef(null);
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -352,18 +363,22 @@ const Featured = () => {
     }
 
     sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-  }, []);
+    revealProjects.current.forEach((ref, i) => {
+      if (ref) {
+        sr.reveal(ref, srConfig(i * 100));
+      }
+    });
+  }, [projectsToShow]);
 
   return (
-    <section id="projects">
+    <StyledFeaturedSection id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
         My Work
       </h2>
 
       <StyledProjectsGrid>
-        {featuredProjects &&
-          featuredProjects.map(({ node }, i) => {
+        {projectsToShow &&
+          projectsToShow.map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { external, title, tech, github, cover, folder, cta, ctaLabel, cta2, cta2Label } =
               frontmatter;
@@ -431,7 +446,13 @@ const Featured = () => {
             );
           })}
       </StyledProjectsGrid>
-    </section>
+
+      {featuredProjects.length > FEATURED_LIMIT && (
+        <button className="more-button" onClick={() => setShowMore(!showMore)}>
+          Show {showMore ? 'Less' : 'More'}
+        </button>
+      )}
+    </StyledFeaturedSection>
   );
 };
 

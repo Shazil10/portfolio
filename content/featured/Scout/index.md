@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'Scout'
 cover: './Scout_image.jpg'
 github: 'https://github.com/Shazil10/Scout'
