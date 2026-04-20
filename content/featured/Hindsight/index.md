@@ -7,14 +7,10 @@ external: ''
 tech:
   - Kotlin
   - IntelliJ Platform SDK
-  - TypeScript
-  - MCP (Model Context Protocol)
-  - SQLite (WAL)
-  - Supabase + pgvector
-  - OpenAI Embeddings
-  - Next.js
+  - MCP
+  - SQLite
+  - Supabase
+  - Vercel
 ---
 
-**Built for the JetBrains Codex Hackathon 2026.**
-
-<span class="featured-lede-name">Hindsight</span> is attempt memory for AI coding agents. Git records what got merged; Hindsight records what got reverted, so the next agent (or teammate) doesn't repeat a dead end. Ships as a JetBrains plugin + MCP server pair with a team-synced dashboard, working across any IntelliJ Platform IDE.
+<span class="featured-lede-name">Hindsight</span> is a local-first memory layer for AI coding agents. It remembers what was tried, what failed, and what worked, so your agents and your team can move forward faster, together.
