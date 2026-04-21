@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'Three-Lens Equity Analysis'
 cover: './three-lens-cover.png'
 github: 'https://github.com/Shazil10/Three-Lens-Equity-Analysis'

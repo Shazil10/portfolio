@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
@@ -368,7 +369,72 @@ const Featured = () => {
         sr.reveal(ref, srConfig(i * 100));
       }
     });
-  }, [projectsToShow]);
+  }, []);
+
+  const projectInner = node => {
+    const { frontmatter, html } = node;
+    const { external, title, tech, github, cover, folder, cta, ctaLabel, cta2, cta2Label } =
+      frontmatter;
+    const image = getImage(cover);
+
+    return (
+      <>
+        <div className="project-content">
+          <div>
+            <p className="project-overline">Featured Project</p>
+
+            <h3 className="project-title">
+              <a href={external}>{title}</a>
+            </h3>
+
+            <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+
+            {tech.length && (
+              <ul className="project-tech-list">
+                {tech.map((tech, i) => (
+                  <li key={i}>{tech}</li>
+                ))}
+              </ul>
+            )}
+
+            <div className="project-links">
+              {cta && (
+                <a href={cta} aria-label="Primary link" className="cta">
+                  {ctaLabel || 'Open resource'}
+                </a>
+              )}
+              {cta2 && (
+                <a href={cta2} aria-label="Secondary link" className="cta">
+                  {cta2Label || 'Open secondary resource'}
+                </a>
+              )}
+              {github && (
+                <a href={github} aria-label="GitHub Link">
+                  <Icon name="GitHub" />
+                </a>
+              )}
+              {external && !cta && (
+                <a href={external} aria-label="External Link" className="external">
+                  <Icon name="External" />
+                </a>
+              )}
+              {folder && (
+                <a href={folder} aria-label="Project Report" className="external">
+                  <Icon name="Folder" />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div className="project-image">
+          <a href={external ? external : github ? github : '#'}>
+            <GatsbyImage image={image} alt={title} className="img" />
+          </a>
+        </div>
+      </>
+    );
+  };
 
   return (
     <StyledFeaturedSection id="projects">
@@ -377,74 +443,36 @@ const Featured = () => {
       </h2>
 
       <StyledProjectsGrid>
-        {projectsToShow &&
-          projectsToShow.map(({ node }, i) => {
-            const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, folder, cta, ctaLabel, cta2, cta2Label } =
-              frontmatter;
-            const image = getImage(cover);
-
-            return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
-                <div className="project-content">
-                  <div>
-                    <p className="project-overline">Featured Project</p>
-
-                    <h3 className="project-title">
-                      <a href={external}>{title}</a>
-                    </h3>
-
-                    <div
-                      className="project-description"
-                      dangerouslySetInnerHTML={{ __html: html }}
-                    />
-
-                    {tech.length && (
-                      <ul className="project-tech-list">
-                        {tech.map((tech, i) => (
-                          <li key={i}>{tech}</li>
-                        ))}
-                      </ul>
-                    )}
-
-                    <div className="project-links">
-                      {cta && (
-                        <a href={cta} aria-label="Primary link" className="cta">
-                          {ctaLabel || 'Open resource'}
-                        </a>
-                      )}
-                      {cta2 && (
-                        <a href={cta2} aria-label="Secondary link" className="cta">
-                          {cta2Label || 'Open secondary resource'}
-                        </a>
-                      )}
-                      {github && (
-                        <a href={github} aria-label="GitHub Link">
-                          <Icon name="GitHub" />
-                        </a>
-                      )}
-                      {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
-                          <Icon name="External" />
-                        </a>
-                      )}
-                      {folder && (
-                        <a href={folder} aria-label="Project Report" className="external">
-                          <Icon name="Folder" />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="project-image">
-                  <a href={external ? external : github ? github : '#'}>
-                    <GatsbyImage image={image} alt={title} className="img" />
-                  </a>
-                </div>
-              </StyledProject>
-            );
-          })}
+        {prefersReducedMotion ? (
+          <>
+            {projectsToShow &&
+              projectsToShow.map(({ node }, i) => (
+                <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+                  {projectInner(node)}
+                </StyledProject>
+              ))}
+          </>
+        ) : (
+          <TransitionGroup component={null}>
+            {projectsToShow &&
+              projectsToShow.map(({ node }, i) => (
+                <CSSTransition
+                  key={i}
+                  classNames="fadeup"
+                  timeout={i >= FEATURED_LIMIT ? (i - FEATURED_LIMIT) * 300 : 300}
+                  exit={false}>
+                  <StyledProject
+                    key={i}
+                    ref={el => (revealProjects.current[i] = el)}
+                    style={{
+                      transitionDelay: `${i >= FEATURED_LIMIT ? (i - FEATURED_LIMIT) * 100 : 0}ms`,
+                    }}>
+                    {projectInner(node)}
+                  </StyledProject>
+                </CSSTransition>
+              ))}
+          </TransitionGroup>
+        )}
       </StyledProjectsGrid>
 
       {featuredProjects.length > FEATURED_LIMIT && (
