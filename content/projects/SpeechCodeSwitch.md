@@ -4,13 +4,13 @@ title: 'Detecting Speech Style Shifts with ML'
 github: 'https://github.com/Shazil10/Voice-Codeswitching-ML-Pipeline'
 external: '/voice-codeswitching-ml-pipeline.pdf'
 tech:
-  - MFCC Feature Extraction
-  - 1D Convolutional Neural Network
-  - Softmax Regression
-  - librosa
+  - Voice Archive Design
+  - Social Context Classification
+  - Context-Conditioned Audio Generation
+  - MFCC Audio Features
   - TensorFlow / Keras
 company: 'Minerva University'
 showInProjects: true
 ---
 
-An end-to-end audio ML pipeline testing whether a classifier trained only on Mel-Frequency Cepstral Coefficients (MFCCs) can detect code-switching across three social contexts (family, close friend, professional) from personal WhatsApp voice notes. Compares a from-scratch Multinomial Softmax Regression model against a 1D CNN (Keras) and evaluates with confusion matrices, ROC curves, and per-class F1 scores.
+An expanded three-part audio ML project that builds a personal WhatsApp voice archive, classifies family, close-friend, and professional contexts from MFCC-based speech features, then explores context-conditioned audio generation. Moves from data organization and feature extraction to Softmax Regression/CNN experiments, confusion-matrix and F1 analysis, and early generative tests for style-aware voice synthesis.
