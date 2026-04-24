@@ -13,4 +13,4 @@ company: 'Minerva University'
 showInProjects: true
 ---
 
-An expanded three-part audio ML project that builds a personal WhatsApp voice archive, classifies family, close-friend, and professional contexts from MFCC-based speech features, then explores context-conditioned audio generation. Moves from data organization and feature extraction to Softmax Regression/CNN experiments, confusion-matrix and F1 analysis, and early generative tests for style-aware voice synthesis.
+An end-to-end audio ML pipeline that turns personal WhatsApp voice notes into a structured voice archive, then studies whether speech patterns can reveal social context across family, close friend, and professional settings. Uses MFCC-based audio features, Softmax Regression, and a 1D CNN to classify context, then explores how those learned style patterns could support context-aware voice generation.
