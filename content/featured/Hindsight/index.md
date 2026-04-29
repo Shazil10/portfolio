@@ -13,4 +13,4 @@ tech:
   - Vercel
 ---
 
-<span class="featured-lede-name">Hindsight</span> is a local-first memory layer for AI coding agents and the humans they work with. It remembers what was tried, what failed, and what worked, so teams move forward faster.
+<span class="featured-lede-name">Hindsight</span> gives AI coding assistants and your team a shared memory. It quietly tracks what was tried, what worked, and what didn't, so the same mistakes don't get repeated and everyone ramps up faster.

@@ -13,4 +13,4 @@ tech:
   - Next.js
 ---
 
-<span class="featured-lede-name">Agent Vision</span> gives AI coding agents eyes. An MCP server backed by a JetBrains plugin lets agents see the UI they ship, so they catch broken buttons before users do.
+<span class="featured-lede-name">Agent Vision</span> lets AI coding assistants actually see the app they're building. It catches broken buttons, bad layouts, and visual bugs before your users do.
