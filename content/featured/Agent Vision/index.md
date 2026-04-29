@@ -1,5 +1,5 @@
 ---
-date: '0'
+date: '1'
 title: 'Agent Vision'
 cover: './agent-vision-cover.png'
 github: 'https://github.com/Shazil10/agent-vision'

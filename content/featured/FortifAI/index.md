@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '6'
 title: 'FortifAI'
 cover: './Fortifai.png'
 github: 'https://github.com/Shazil10/FortifAI'
