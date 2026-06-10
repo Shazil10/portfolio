@@ -7,6 +7,5 @@ range: 'May 2024 – August 2024'
 url: 'https://www.redcellpartners.com/'
 ---
 
-- Created an investment database of 300+ investors, funds, and deals in the software supply chain security (SSCS) sector to support deal sourcing and thesis development
-- Performed valuation analyses for 2 SSCS incubators, including DCF, comparable companies, and precedent transactions
-- Analyzed an average of 3 startup applications per week for Red Cell Go, assessing business models, financials, and market potential, contributing to funding decisions for startups raising over $355M
+- Programmed robust data extraction scripts to map and spin up a relational database tracking 300+ deep-tech venture funds, founders, and transactions in the Software Supply Chain Security (SSCS) ecosystem
+- Analyzed an average of 3 startup applications per week for Red Cell Go (RCG), assessing business models, financials, and market potential; contributing to funding decisions for startups raising over $355M

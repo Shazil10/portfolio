@@ -2,10 +2,10 @@
 date: '7'
 title: 'Investment Banking Spring Analyst'
 company: 'Vermilion Rock Advisors'
-location: 'Remote'
+location: 'San Francisco, CA'
 range: 'December 2024 – April 2025'
 url: ''
 ---
 
-- Sourced 80+ acquisition opportunities weekly in HVAC, plastics, and industrial services for live M&A deals
-- Performed valuation analysis for a sell-side client in circuit board and microelectronics manufacturing, analyzing 4 years of financial statements, customer concentration, and industry trends to determine enterprise value and assess deal viability
+- Engineered agentic LLM scrapers surfacing 10+ weekly M&A targets across 5+ databases and 100+ sites for HVAC deals
+- Performed valuation analysis for the firm's sell-side client in circuit board & microelectronics manufacturing, analyzing 4 years of financial statements, customer concentration, & industry trends to determine enterprise value & assess deal viability

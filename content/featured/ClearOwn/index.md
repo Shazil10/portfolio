@@ -1,5 +1,5 @@
 ---
-date: '5'
+date: '2'
 title: 'ClearOwn'
 cover: './ClearOwn.png'
 github: 'https://github.com/Shazil10/KYB-Agent'
