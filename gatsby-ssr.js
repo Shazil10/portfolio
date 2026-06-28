@@ -1,7 +1,11 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react';
+import Maintenance from './src/components/Maintenance';
+const { enabled: maintenanceEnabled } = require('./maintenance.json');
 
-// You can delete this file if you're not using it
+export const wrapPageElement = ({ element }) => {
+  if (maintenanceEnabled) {
+    return <Maintenance />;
+  }
+
+  return element;
+};

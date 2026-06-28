@@ -1,5 +1,11 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import React from 'react';
+import Maintenance from './src/components/Maintenance';
+const { enabled: maintenanceEnabled } = require('./maintenance.json');
+
+export const wrapPageElement = ({ element }) => {
+  if (maintenanceEnabled) {
+    return <Maintenance />;
+  }
+
+  return element;
+};
