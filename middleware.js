@@ -47,7 +47,7 @@ const maintenanceHtml = `<!DOCTYPE html>
     <div>
       <h1>Site temporarily unavailable</h1>
       <p>This portfolio is offline for a short update. It should be back online soon.</p>
-      <a href="mailto:m.farukh@uni.minerva.edu">m.farukh@uni.minerva.edu</a>
+      <a href="mailto:shazilfarukh196@gmail.com">shazilfarukh196@gmail.com</a>
     </div>
   </body>
 </html>`;

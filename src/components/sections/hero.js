@@ -62,12 +62,12 @@ const Hero = () => {
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Shazil Farukh.</h2>;
   const three = (
-    <h3 className="big-heading">I love building models to understand how things work.</h3>
+    <h3 className="big-heading">I build models and systematic strategies for financial markets.</h3>
   );
   const four = (
     <>
-      <p style={{ whiteSpace: 'nowrap' }}>
-        Currently applying them to financial markets at the{' '}
+      <p>
+        Currently at{' '}
         <a
           href="https://treasury.worldbank.org/en/about/unit/treasury"
           target="_blank"

@@ -52,7 +52,7 @@ const Maintenance = () => (
         <StyledMessage>
           This portfolio is offline for a short update. It should be back online soon.
         </StyledMessage>
-        <StyledEmail href="mailto:m.farukh@uni.minerva.edu">m.farukh@uni.minerva.edu</StyledEmail>
+        <StyledEmail href="mailto:shazilfarukh196@gmail.com">shazilfarukh196@gmail.com</StyledEmail>
       </StyledMain>
     </ThemeProvider>
   </>

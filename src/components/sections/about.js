@@ -127,13 +127,13 @@ const About = () => {
 
   const skills = [
     'Python',
-    'PyTorch & TensorFlow',
-    'LangGraph',
-    'TypeScript, FastAPI & Next.js',
-    'SQL',
-    'Bloomberg Terminal',
     'QuantLib',
-    'n8n',
+    'Bloomberg Terminal',
+    'statsmodels',
+    'XGBoost',
+    'SQL',
+    'FastAPI',
+    'PyTorch & TensorFlow',
   ];
 
   return (
@@ -144,19 +144,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! I'm Shazil, an analyst in the Financial Technology team at{' '}
+              Hello! I'm Shazil, an analyst on the Quantitative and Financial Technology team at{' '}
               <a href="https://treasury.worldbank.org/en/about/unit/treasury">
                 <strong>World Bank Treasury</strong>
               </a>
-              , building and supporting quantitative workflows for fixed income, capital markets,
-              and asset management ($80B AUM; 70+ central banks).
+              , supporting work across fixed income, capital markets, and asset management ($80B
+              AUM; 70+ central banks).
             </p>
 
             <p>
               Previously, I’ve worked in investment banking at{' '}
               <strong>Vermilion Rock Advisors</strong>, venture investing at{' '}
               <strong>Red Cell Partners</strong>, and corporate finance at <strong>Siemens</strong>.
-              Recently, I’ve been most interested in exploring AI for finance.
             </p>
 
             <p>Here are a few tools I’ve been working with recently:</p>
