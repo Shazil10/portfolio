@@ -40,6 +40,23 @@ const StyledHeroSection = styled.section`
     max-width: 540px;
   }
 
+  .hero-ctas {
+    display: flex;
+    align-items: flex-start;
+
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+
+    a + a {
+      margin-left: 20px;
+
+      @media (max-width: 480px) {
+        margin-left: 0;
+      }
+    }
+  }
+
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
@@ -79,9 +96,18 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a className="email-link" href="#about" rel="noreferrer">
-      Explore My Work
-    </a>
+    <div className="hero-ctas">
+      <a className="email-link" href="#about" rel="noreferrer">
+        Explore My Work
+      </a>
+      <a
+        className="email-link"
+        href="https://trading.shazilfarukh.com/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Trading system
+      </a>
+    </div>
   );
 
   const items = [one, two, three, four, five];
