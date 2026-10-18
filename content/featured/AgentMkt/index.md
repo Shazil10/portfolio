@@ -1,5 +1,5 @@
 ---
-date: '3'
+date: '4'
 title: 'AgentMkt'
 cover: './agentmkt-cover.png'
 github: 'https://github.com/Shazil10/AgentMkt'
