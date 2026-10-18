@@ -342,6 +342,8 @@ const Featured = () => {
               ctaLabel
               cta2
               cta2Label
+              video
+              videoLabel
             }
             html
           }
@@ -373,8 +375,20 @@ const Featured = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { external, title, tech, github, cover, folder, cta, ctaLabel, cta2, cta2Label } =
-      frontmatter;
+    const {
+      external,
+      title,
+      tech,
+      github,
+      cover,
+      folder,
+      cta,
+      ctaLabel,
+      cta2,
+      cta2Label,
+      video,
+      videoLabel,
+    } = frontmatter;
     const image = getImage(cover);
 
     return (
@@ -416,6 +430,16 @@ const Featured = () => {
               {external && !cta && (
                 <a href={external} aria-label="External Link" className="external">
                   <Icon name="External" />
+                </a>
+              )}
+              {video && (
+                <a
+                  href={video}
+                  aria-label={videoLabel || '1 min video'}
+                  className="cta"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  {videoLabel || '1 min video'}
                 </a>
               )}
               {folder && (

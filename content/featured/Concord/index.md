@@ -4,6 +4,8 @@ title: 'Concord'
 cover: './concord-cover.jpg'
 github: 'https://github.com/Shazil10/Concord'
 external: 'https://empty-react-app-6c23.ninoo.app/'
+video: 'https://www.loom.com/share/de3117b0a92b4babbe6bed9ad292f5ae'
+videoLabel: '1 min video'
 tech:
   - Nicrron
   - PRISM by Block Convey
