@@ -16,4 +16,4 @@ tech:
 
 **Built at Money Talks 2 · AI × Finance Hackathon (Money Operations track)**
 
-<span class="featured-lede-name">Concord</span> is a last check before settlement. A single trade paid to a stale account can lock up the cash for a week of emails and calls, and in development finance that week is a country waiting on the money. Concord reads both confirmations and the live instructions, and holds the payment when the account, amount, or date does not match.
+Concord is a last check before settlement. A single trade paid to a stale account can lock up the cash for a week of emails and calls, and in development finance that week is a country waiting on the money. Concord reads both confirmations and the live instructions, and holds the payment when the account, amount, or date does not match.
